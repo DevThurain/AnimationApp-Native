@@ -20,6 +20,11 @@
             app:destination="@id/navViewGroupAnimation"
             app:popUpTo="@navigation/main_navigation"
             />
+        <action
+            android:id="@+id/action_navAnimationList_to_navCombineAnimation"
+            app:destination="@id/navCombineAnimation"
+            app:popUpTo="@navigation/main_navigation"
+            />
     </fragment>
     <fragment
         android:id="@+id/navValueAnimator"
@@ -32,5 +37,12 @@
         android:name="com.thurainx.animationapp.fragments.ViewGroupAnimationFragment"
         android:label="View Group Animation"
         tools:layout="@layout/fragment_view_group_animation"/>
+
+    <fragment
+        android:id="@+id/navCombineAnimation"
+        android:name="com.thurainx.animationapp.fragments.CombineAnimationFragment"
+        android:label="Combine Animation"
+        tools:layout="@layout/fragment_combine_animation"/>
+
 
 </navigation>

@@ -30,4 +30,15 @@
         android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="@id/btnValueAnimator"
         app:layout_constraintTop_toBottomOf="@id/btnValueAnimator" />
+
+    <Button
+        android:id="@+id/btnCombineAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/secondaryColor"
+        android:text="Combine Animation"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@id/btnViewGroupAnimation"
+        app:layout_constraintTop_toBottomOf="@id/btnViewGroupAnimation" />
 </androidx.constraintlayout.widget.ConstraintLayout>

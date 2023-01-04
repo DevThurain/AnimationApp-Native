@@ -37,6 +37,10 @@ class AnimationListFragment : Fragment() {
                 findNavController().navigate(R.id.action_navAnimationList_to_navViewGroupAnimation)
             }
 
+            btnCombineAnimation.setOnClickListener {
+                findNavController().navigate(R.id.action_navAnimationList_to_navCombineAnimation)
+            }
+
 
 
         }
