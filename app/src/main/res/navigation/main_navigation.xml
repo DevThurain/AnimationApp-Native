@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/navAnimationList">
+
+    <fragment
+        android:id="@+id/navAnimationList"
+        android:name="com.thurainx.animationapp.fragments.AnimationListFragment"
+        tools:layout="@layout/fragment_animation_list"
+        android:label="Animation List">
+        <action
+            android:id="@+id/action_navAnimationList_to_valueAnimatorFragment"
+            app:destination="@id/navValueAnimator"
+            app:popUpTo="@id/navAnimationList"
+            />
+        <action
+            android:id="@+id/action_navAnimationList_to_navViewGroupAnimation"
+            app:destination="@id/navViewGroupAnimation"
+            app:popUpTo="@navigation/main_navigation"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/navValueAnimator"
+        android:name="com.thurainx.animationapp.fragments.ValueAnimatorFragment"
+        android:label="Value Animator"
+        tools:layout="@layout/fragment_value_animator" />
+
+    <fragment
+        android:id="@+id/navViewGroupAnimation"
+        android:name="com.thurainx.animationapp.fragments.ViewGroupAnimationFragment"
+        android:label="View Group Animation"
+        tools:layout="@layout/fragment_view_group_animation"/>
+
+</navigation>
