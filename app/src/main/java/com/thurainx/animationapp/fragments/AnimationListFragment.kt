@@ -41,6 +41,10 @@ class AnimationListFragment : Fragment() {
                 findNavController().navigate(R.id.action_navAnimationList_to_navCombineAnimation)
             }
 
+            btnSpringAnimation.setOnClickListener {
+                findNavController().navigate(R.id.action_navAnimationList_to_navSpringAnimation)
+            }
+
 
 
         }
