@@ -52,4 +52,25 @@
         android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="@id/btnCombineAnimation"
         app:layout_constraintTop_toBottomOf="@id/btnCombineAnimation" />
+
+    <Button
+        android:id="@+id/btnNextActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/secondaryColor"
+        android:text="Activity Transition"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@id/btnSpringAnimation"
+        app:layout_constraintTop_toBottomOf="@id/btnSpringAnimation" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivAnimationBall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:transitionName="@string/transition_ball"
+        app:layout_constraintStart_toStartOf="@+id/btnNextActivity"
+        app:layout_constraintTop_toBottomOf="@+id/btnNextActivity"
+        app:srcCompat="@drawable/ball" />
 </androidx.constraintlayout.widget.ConstraintLayout>

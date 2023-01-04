@@ -13,6 +13,10 @@
         <item name="android:statusBarColor">@color/actionBarColor</item>
         <item name="android:navigationBarColor">@color/actionBarColor</item>
         <item name="android:windowLightStatusBar">true</item>
-        <!-- Customize your theme here. -->
-    </style>
+
+        <!-- activity transition-->
+        <item name="android:windowAnimationStyle">@style/ActivityTransition</item>
+
+        <!-- hero transition-->
+        <item name="android:windowContentTransitions">true</item>    </style>
 </resources>

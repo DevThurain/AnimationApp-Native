@@ -14,6 +14,11 @@
         <item name="android:navigationBarColor">@color/actionBarColor</item>
         <item name="android:windowLightStatusBar">false</item>
 
-        <!-- Customize your theme here. -->
+        <!-- activity transition-->
+        <item name="android:windowAnimationStyle">@style/ActivityTransition</item>
+
+        <!-- hero transition-->
+        <item name="android:windowContentTransitions">true</item>
+
     </style>
 </resources>

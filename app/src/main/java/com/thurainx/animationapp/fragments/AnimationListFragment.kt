@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.app.ActivityOptionsCompat
 import androidx.navigation.fragment.findNavController
 import com.thurainx.animationapp.R
+import com.thurainx.animationapp.activities.NextActivity
 import com.thurainx.animationapp.databinding.FragmentAnimationListBinding
 
 
@@ -45,6 +47,16 @@ class AnimationListFragment : Fragment() {
                 findNavController().navigate(R.id.action_navAnimationList_to_navSpringAnimation)
             }
 
+            btnNextActivity.setOnClickListener {
+                startActivity(NextActivity.getIntent(requireContext()))
+            }
+
+            ivAnimationBall.setOnClickListener {
+                val transitionPair = androidx.core.util.Pair.create(it,getString(R.string.transition_ball))
+                val option = ActivityOptionsCompat.makeSceneTransitionAnimation(requireActivity(),transitionPair)
+                val intent = NextActivity.getIntent(requireContext())
+                startActivity(intent,option.toBundle())
+            }
 
 
         }

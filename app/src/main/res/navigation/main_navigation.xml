@@ -14,21 +14,38 @@
             android:id="@+id/action_navAnimationList_to_valueAnimatorFragment"
             app:destination="@id/navValueAnimator"
             app:popUpTo="@id/navAnimationList"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+
             />
         <action
             android:id="@+id/action_navAnimationList_to_navViewGroupAnimation"
             app:destination="@id/navViewGroupAnimation"
             app:popUpTo="@navigation/main_navigation"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             />
         <action
             android:id="@+id/action_navAnimationList_to_navCombineAnimation"
             app:destination="@id/navCombineAnimation"
             app:popUpTo="@navigation/main_navigation"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             />
         <action
             android:id="@+id/action_navAnimationList_to_navSpringAnimation"
             app:destination="@id/navSpringAnimation"
             app:popUpTo="@navigation/main_navigation"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             />
     </fragment>
     <fragment
